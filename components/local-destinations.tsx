@@ -7,14 +7,14 @@ const destinations = [
     name: "Rocky Mountain National Park",
     description: "Experience the majestic peaks and wildlife of Colorado's most famous national park.",
     distance: "70 miles from Denver",
-    image: "https://images.unsplash.com/photo-1565374392032-8427647c491a?auto=format&fit=crop&q=80"
+    image: "https://images.unsplash.com/photo-1645857060363-ef9764e9f86f?q=80&w=873&auto=format&fit=crop&q=80"
   },
   {
     id: 2,
     name: "Garden of the Gods",
     description: "Explore stunning red rock formations against the backdrop of Pikes Peak.",
     distance: "65 miles from Denver",
-    image: "https://images.unsplash.com/photo-1600200152755-0de75a6322e2?auto=format&fit=crop&q=80"
+    image: "https://images.unsplash.com/photo-1521767844336-1c770f591298?q=80&w=870&auto=format&fit=crop&q=80"
   },
   {
     id: 3,
