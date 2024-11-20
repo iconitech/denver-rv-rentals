@@ -26,7 +26,7 @@ export function Hero() {
               <Button size="lg" className="bg-blue-700 hover:bg-blue-800">
                 View Our Fleet
               </Button>
-              <Button variant="outline" size="lg" className="text-white border-white hover:bg-white/10">
+              <Button variant="outline" size="lg" className="text-blue-400 border-white hover:bg-white/10">
                 Contact Us
               </Button>
             </div>
