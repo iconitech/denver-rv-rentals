@@ -15,7 +15,7 @@ export function Navigation() {
           <div className="flex items-center">
             <Link href="/" className="flex items-center space-x-2">
               <MountainSnow className="h-8 w-8 text-blue-700" />
-              <span className="font-bold text-xl text-gray-900">Mountain View RV</span>
+              <span className="font-bold text-xl text-gray-900">RV Rentals Denver</span>
             </Link>
           </div>
           
@@ -24,7 +24,8 @@ export function Navigation() {
             <Link href="#destinations" className="text-gray-700 hover:text-blue-700">Destinations</Link>
             <Link href="#testimonials" className="text-gray-700 hover:text-blue-700">Reviews</Link>
             <Link href="#contact" className="text-gray-700 hover:text-blue-700">Contact</Link>
-            <Button className="bg-blue-700 hover:bg-blue-800">Book Now</Button>
+            <Button className="bg-blue-700 hover:bg-blue-800" onClick={() => window.open('https://checkout.wheelbasepro.com/reserve?owner_id=176271', '_blank')}
+>Book Now</Button>
           </div>
 
           <div className="md:hidden flex items-center">

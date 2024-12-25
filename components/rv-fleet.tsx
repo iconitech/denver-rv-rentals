@@ -8,16 +8,16 @@ import { Truck, Users, Bed, Fuel } from "lucide-react";
 const rvs = [
   {
     id: 1,
-    name: "Mountain Explorer Class A",
+    name: "2021 Winnebago Outlook White Edition Solar",
     description: "Luxury Class A motorhome perfect for families, featuring full amenities and plenty of space.",
     image: "https://images.unsplash.com/photo-1627663361024-5cc5cc2d41e2?auto=format&fit=crop&q=80",
     specs: {
       sleeps: "6",
-      length: "32ft",
-      fuel: "Diesel",
+      length: "26ft",
+      fuel: "Regular",
       transmission: "Automatic"
     },
-    price: "299"
+    price: "259"
   },
   {
     id: 2,
