@@ -16,11 +16,11 @@ export function Hero() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="max-w-2xl">
             <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
-              Experience Colorado in Comfort
+              Experience Colorado in Comfort with Our Luxury RV Rentals
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-300">
-              Explore the Rocky Mountains in style with our luxury RV rentals. 
-              Based in Denver, we offer premium vehicles and exceptional service for your Colorado adventure.
+              Explore the Rocky Mountains in style with our premium RV rentals. 
+              Based in Denver, we offer premium vehicles and exceptional service as a family-owned business.
             </p>
             <div className="mt-10 flex items-center gap-x-6">
               <Button size="lg" className="bg-blue-700 hover:bg-blue-800">
