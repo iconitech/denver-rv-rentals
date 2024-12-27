@@ -8,7 +8,7 @@ import { Toaster } from '@/components/ui/toaster';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Mountain View RV Rentals Denver | Luxury RV Rentals in Colorado',
+  title: 'RV Rentals Denver | Premium RV Rentals in Colorado',
   description: 'Premium RV rentals in Denver, Colorado. Experience the Rockies in comfort with our luxury RVs. Local, family-owned business with 5-star service.',
   keywords: 'RV rental Denver, Colorado RV rentals, luxury RV rental, Denver camping, Rocky Mountain RV, Colorado vacation rentals',
   openGraph: {
