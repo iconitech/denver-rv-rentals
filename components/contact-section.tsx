@@ -29,7 +29,7 @@ export function ContactSection() {
                 <Phone className="h-6 w-6 text-blue-700 flex-shrink-0" />
                 <div>
                   <h3 className="font-semibold">Phone</h3>
-                  <p className="text-gray-600">(303) 555-0123</p>
+                  <p className="text-gray-600">(720) 9-RENTRV</p>
                 </div>
               </div>
 
