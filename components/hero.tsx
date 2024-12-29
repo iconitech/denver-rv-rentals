@@ -5,8 +5,8 @@ export function Hero() {
   return (
     <div className="relative min-h-screen">
       <Image
-        src="https://images.unsplash.com/photo-1523987355523-c7b5b0dd90a7?auto=format&fit=crop&q=80"
-        alt="RV in front of mountains"
+        src="/images/rv-rentals-denver-1.jpg"
+        alt="Luxury RV rental in Denver"
         fill
         priority
         className="object-cover"
@@ -23,10 +23,24 @@ export function Hero() {
               Based in Denver, we offer premium vehicles and exceptional service as a family-owned business.
             </p>
             <div className="mt-10 flex items-center gap-x-6">
-              <Button size="lg" className="bg-blue-700 hover:bg-blue-800">
+              <Button 
+                size="lg" 
+                className="bg-blue-700 hover:bg-blue-800"
+                onClick={() => {
+                  const element = document.getElementById('fleet');
+                  element?.scrollIntoView({ behavior: 'smooth' });
+                }}
+              >
                 View Our Fleet
               </Button>
-              <Button size="lg" className="bg-blue-700 hover:bg-blue-800">
+              <Button 
+                size="lg" 
+                className="bg-blue-700 hover:bg-blue-800"
+                onClick={() => {
+                  const element = document.getElementById('contact');
+                  element?.scrollIntoView({ behavior: 'smooth' });
+                }}
+              >
                 Contact Us
               </Button>
             </div>

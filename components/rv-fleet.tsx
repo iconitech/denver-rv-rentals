@@ -96,7 +96,10 @@ export function RvFleet() {
                   <div className="text-lg font-semibold">
                     ${rv.price}<span className="text-sm text-gray-500">/night</span>
                   </div>
-                  <Button className="bg-blue-700 hover:bg-blue-800">
+                  <Button 
+                    className="bg-blue-700 hover:bg-blue-800"
+                    onClick={() => window.open('https://checkout.wheelbasepro.com/reserve?owner_id=176271', '_blank')}
+                  >
                     Book Now
                   </Button>
                 </div>

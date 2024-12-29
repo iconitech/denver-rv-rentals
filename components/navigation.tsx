@@ -24,8 +24,7 @@ export function Navigation() {
             <Link href="#destinations" className="text-gray-700 hover:text-blue-700">Destinations</Link>
             <Link href="#testimonials" className="text-gray-700 hover:text-blue-700">Reviews</Link>
             <Link href="#contact" className="text-gray-700 hover:text-blue-700">Contact</Link>
-            <Button className="bg-blue-700 hover:bg-blue-800" onClick={() => window.open('https://checkout.wheelbasepro.com/reserve?owner_id=176271', '_blank')}
->Book Now</Button>
+            <Link href="https://checkout.wheelbasepro.com/reserve?owner_id=176271" target="_blank" rel="noopener noreferrer" className="bg-blue-700 hover:bg-blue-800 rounded-md py-2 px-4 text-white">Book Now</Link>
           </div>
 
           <div className="md:hidden flex items-center">
@@ -43,7 +42,7 @@ export function Navigation() {
             <Link href="#destinations" className="block px-3 py-2 text-gray-700 hover:text-blue-700">Destinations</Link>
             <Link href="#testimonials" className="block px-3 py-2 text-gray-700 hover:text-blue-700">Reviews</Link>
             <Link href="#contact" className="block px-3 py-2 text-gray-700 hover:text-blue-700">Contact</Link>
-            <Button className="w-full bg-blue-700 hover:bg-blue-800 mt-2">Book Now</Button>
+            <Link href="https://checkout.wheelbasepro.com/reserve?owner_id=176271" target="_blank" rel="noopener noreferrer" className="w-full bg-blue-700 hover:bg-blue-800 mt-2 py-2 text-white">Book Now</Link>
           </div>
         </div>
       )}
