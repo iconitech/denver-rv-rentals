@@ -5,7 +5,7 @@ export function Hero() {
   return (
     <div className="relative min-h-screen">
       <Image
-        src="/images/rv-rentals-denver-1.webp"
+        src="/images/rv-rentals-denver-1.jpg"
         alt="Luxury RV rental in Denver"
         fill
         priority

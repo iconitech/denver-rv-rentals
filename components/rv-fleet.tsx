@@ -23,7 +23,7 @@ const rvs = [
     id: 2,
     name: "2008 Coachmen Freelander",
     description: "Comfortable and reliable Class C RV, perfect for small families and weekend getaways.",
-    image: "/images/2008coachmen-freelander.webp",
+    image: "/images/2008-coachmen-freelander.webp",
     specs: {
       sleeps: "4",
       length: "23ft",
