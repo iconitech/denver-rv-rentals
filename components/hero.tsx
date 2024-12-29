@@ -23,26 +23,16 @@ export function Hero() {
               Based in Denver, we offer premium vehicles and exceptional service as a family-owned business.
             </p>
             <div className="mt-10 flex items-center gap-x-6">
-              <Button 
-                size="lg" 
-                className="bg-blue-700 hover:bg-blue-800"
-                onClick={() => {
-                  const element = document.getElementById('fleet');
-                  element?.scrollIntoView({ behavior: 'smooth' });
-                }}
-              >
-                View Our Fleet
-              </Button>
-              <Button 
-                size="lg" 
-                className="bg-blue-700 hover:bg-blue-800"
-                onClick={() => {
-                  const element = document.getElementById('contact');
-                  element?.scrollIntoView({ behavior: 'smooth' });
-                }}
-              >
-                Contact Us
-              </Button>
+              <a href="#fleet">
+                <Button size="lg" className="bg-blue-700 hover:bg-blue-800">
+                  View Our Fleet
+                </Button>
+              </a>
+              <a href="#contact">
+                <Button size="lg" className="bg-blue-700 hover:bg-blue-800">
+                  Contact Us
+                </Button>
+              </a>
             </div>
           </div>
         </div>
