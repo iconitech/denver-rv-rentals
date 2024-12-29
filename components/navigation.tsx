@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { MountainSnow, Menu, X } from 'lucide-react';
+import Image from 'next/image';
 
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,8 +15,17 @@ export function Navigation() {
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <Link href="/" className="flex items-center space-x-2">
-              <MountainSnow className="h-8 w-8 text-blue-700" />
-              <span className="font-bold text-xl text-gray-900">RV Rentals Denver</span>
+              <Image
+                src="/images/Logo-floridabluesky.png"
+                alt="Florida Blue Sky Adventures Logo"
+                width={40}
+                height={40}
+                className="h-10 w-auto"
+              />
+              <div className="flex flex-col">
+                <span className="font-bold text-xl text-gray-900">RV Rentals Denver</span>
+                <span className="text-xs text-gray-600">by Florida Blue Sky Adventures Inc.</span>
+              </div>
             </Link>
           </div>
           
