@@ -21,7 +21,7 @@ export function ContactSection() {
                 <MapPin className="h-6 w-6 text-blue-700 flex-shrink-0" />
                 <div>
                   <h3 className="font-semibold">Location</h3>
-                  <p className="text-gray-600">123 Adventure Way, Denver, CO 80202</p>
+                  <p className="text-gray-600">8500 Peña Blvd Denver, CO 80249</p>
                 </div>
               </div>
 
@@ -37,7 +37,7 @@ export function ContactSection() {
                 <Mail className="h-6 w-6 text-blue-700 flex-shrink-0" />
                 <div>
                   <h3 className="font-semibold">Email</h3>
-                  <p className="text-gray-600">info@mountainviewrv.com</p>
+                  <p className="text-gray-600">info@rv-denver.com</p>
                 </div>
               </div>
 
@@ -45,7 +45,7 @@ export function ContactSection() {
                 <Clock className="h-6 w-6 text-blue-700 flex-shrink-0" />
                 <div>
                   <h3 className="font-semibold">Hours</h3>
-                  <p className="text-gray-600">Mon-Sat: 8am - 6pm</p>
+                  <p className="text-gray-600">Mon-Sat: 8am - 8pm</p>
                   <p className="text-gray-600">Sunday: 10am - 4pm</p>
                 </div>
               </div>

@@ -10,7 +10,7 @@ const rvs = [
     id: 1,
     name: "2021 Winnebago Outlook White Edition Solar",
     description: "Luxury Class A motorhome perfect for families, featuring full amenities and plenty of space.",
-    image: "https://images.unsplash.com/photo-1627663361024-5cc5cc2d41e2?auto=format&fit=crop&q=80",
+    image: "/images/2021-winnebago-outlook.webp",
     specs: {
       sleeps: "6",
       length: "26ft",
@@ -21,16 +21,16 @@ const rvs = [
   },
   {
     id: 2,
-    name: "Colorado Wanderer Class C",
-    description: "Ideal mid-size RV combining comfort and maneuverability for the perfect adventure.",
-    image: "https://images.unsplash.com/photo-1543395136-75b39bc00e0e?auto=format&fit=crop&q=80",
+    name: "2008 Coachmen Freelander",
+    description: "Comfortable and reliable Class C RV, perfect for small families and weekend getaways.",
+    image: "/images/2008coachmen-freelander.webp",
     specs: {
       sleeps: "4",
-      length: "25ft",
+      length: "23ft",
       fuel: "Gas",
       transmission: "Automatic"
     },
-    price: "199"
+    price: "179"
   },
   {
     id: 3,

@@ -2,8 +2,8 @@ import { Shield, Clock, MapPin, Phone } from 'lucide-react';
 
 const features = [
   {
-    name: '24/7 Support',
-    description: 'Round-the-clock assistance for peace of mind during your journey.',
+    name: 'Fast Support',
+    description: 'We are always here to provide assistance for peace of mind during your journey.',
     icon: Phone,
   },
   {
