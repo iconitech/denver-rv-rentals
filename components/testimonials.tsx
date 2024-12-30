@@ -20,7 +20,7 @@ const testimonials = [
     id: 3,
     name: "Emily Martinez",
     location: "Denver, CO",
-    text: "We rented the Mountain Explorer for a week-long trip to Maroon Bells. The RV handled beautifully and the customer service was exceptional.",
+    text: "We rented the 2021 Winnebago for a week-long trip to Maroon Bells. The RV handled beautifully and the customer service was exceptional.",
     rating: 5
   }
 ];
