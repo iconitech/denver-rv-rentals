@@ -9,7 +9,7 @@ const rvs = [
   {
     id: 1,
     name: "2021 Winnebago Outlook White Edition Solar",
-    description: "Luxury Class A motorhome perfect for families, featuring full amenities and plenty of space.",
+    description: "Luxury Class C motorhome perfect for families, featuring full amenities and plenty of space.",
     image: "/images/2021-winnebago-outlook.webp",
     specs: {
       sleeps: "6",
