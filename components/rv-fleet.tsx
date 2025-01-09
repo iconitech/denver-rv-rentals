@@ -21,29 +21,29 @@ const rvs = [
   },
   {
     id: 2,
-    name: "2008 Coachmen Freelander",
+    name: "2020 Winnebago Outlook",
     description: "Comfortable and reliable Class C RV, perfect for small families and weekend getaways.",
-    image: "/images/2008-coachmen-freelander.webp",
+    image: "/images/2020-winnebago-outlook.webp",
     specs: {
-      sleeps: "4",
-      length: "23ft",
+      sleeps: "5",
+      length: "24ft",
       fuel: "Gas",
       transmission: "Automatic"
     },
-    price: "179"
+    price: "189"
   },
   {
     id: 3,
-    name: "Rocky Mountain Camper Van",
-    description: "Compact and versatile camper van, perfect for couples or solo travelers seeking adventure.",
-    image: "https://images.unsplash.com/photo-1533591380348-14193f1de18f?auto=format&fit=crop&q=80",
+    name: "2015 Winnebago Access de Luxe",
+    description: "Versatile RV, perfect for couples or families seeking adventure.",
+    image: "/images/2015-winnebago-access.webp",
     specs: {
-      sleeps: "2",
-      length: "19ft",
+      sleeps: "4",
+      length: "25ft",
       fuel: "Gas",
       transmission: "Automatic"
     },
-    price: "149"
+    price: "189"
   }
 ];
 
