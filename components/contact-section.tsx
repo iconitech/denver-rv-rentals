@@ -90,7 +90,28 @@ export function ContactSection() {
                 <Textarea id="message" name="message" rows={4} required className="mt-1" />
               </div>
 
-              <Button type="submit" className="w-full bg-blue-700 hover:bg-blue-800">
+              <Button 
+                type="button" 
+                className="w-full bg-blue-700 hover:bg-blue-800"
+                onClick={() => {
+                  const firstName = (document.getElementById('first-name') as HTMLInputElement)?.value || '';
+                  const lastName = (document.getElementById('last-name') as HTMLInputElement)?.value || '';
+                  const email = (document.getElementById('email') as HTMLInputElement)?.value || '';
+                  const phone = (document.getElementById('phone') as HTMLInputElement)?.value || '';
+                  const message = (document.getElementById('message') as HTMLTextAreaElement)?.value || '';
+
+                  const subject = `New Contact Form Submission from ${firstName} ${lastName}`;
+                  const body = `
+Name: ${firstName} ${lastName}
+Email: ${email}
+Phone: ${phone}
+
+Message:
+${message}`;
+
+                  window.location.href = `mailto:info@rv-denver.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+                }}
+              >
                 Send Message
               </Button>
             </form>
