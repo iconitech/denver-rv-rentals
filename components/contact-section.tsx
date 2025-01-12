@@ -57,13 +57,13 @@ export function ContactSection() {
               <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
                 <div>
                   <label htmlFor="first-name" className="block text-sm font-medium text-gray-700">
-                    First name
+                    First name <span className="text-red-500">*</span>
                   </label>
                   <Input id="first-name" name="first-name" required className="mt-1" />
                 </div>
                 <div>
                   <label htmlFor="last-name" className="block text-sm font-medium text-gray-700">
-                    Last name
+                    Last name <span className="text-red-500">*</span>
                   </label>
                   <Input id="last-name" name="last-name" required className="mt-1" />
                 </div>
@@ -71,7 +71,7 @@ export function ContactSection() {
 
               <div>
                 <label htmlFor="email" className="block text-sm font-medium text-gray-700">
-                  Email
+                  Email <span className="text-red-500">*</span>
                 </label>
                 <Input id="email" name="email" type="email" required className="mt-1" />
               </div>
@@ -85,7 +85,7 @@ export function ContactSection() {
 
               <div>
                 <label htmlFor="message" className="block text-sm font-medium text-gray-700">
-                  Message
+                  Message <span className="text-red-500">*</span>
                 </label>
                 <Textarea id="message" name="message" rows={4} required className="mt-1" />
               </div>
@@ -99,6 +99,19 @@ export function ContactSection() {
                   const email = (document.getElementById('email') as HTMLInputElement)?.value || '';
                   const phone = (document.getElementById('phone') as HTMLInputElement)?.value || '';
                   const message = (document.getElementById('message') as HTMLTextAreaElement)?.value || '';
+
+                  // Check required fields
+                  if (!firstName || !lastName || !email || !message) {
+                    alert('Please fill in all required fields (First Name, Last Name, Email, and Message)');
+                    return;
+                  }
+
+                  // Basic email validation
+                  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                  if (!emailRegex.test(email)) {
+                    alert('Please enter a valid email address');
+                    return;
+                  }
 
                   const subject = `New Contact Form Submission from ${firstName} ${lastName}`;
                   const body = `
