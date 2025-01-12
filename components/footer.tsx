@@ -20,7 +20,7 @@ export function Footer() {
           <div className="flex items-center justify-center space-x-2">
             <MountainSnow className="h-6 w-6 text-blue-500" />
             <p className="text-center text-xs leading-5 text-gray-400">
-              &copy; {new Date().getFullYear()} Mountain View RV Rentals. All rights reserved.
+              &copy; {new Date().getFullYear()} Florida Blue Sky Adventures Inc. All rights reserved.
             </p>
           </div>
         </div>
