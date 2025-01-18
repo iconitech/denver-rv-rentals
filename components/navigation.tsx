@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { MountainSnow, Menu, X } from 'lucide-react';
+import { MountainSnow, Menu, X, Phone } from 'lucide-react';
 import Image from 'next/image';
 
 export function Navigation() {
@@ -27,6 +27,10 @@ export function Navigation() {
                 <span className="text-xs text-gray-600">by Florida Blue Sky Adventures Inc.</span>
               </div>
             </Link>
+            <div className="hidden md:flex items-center ml-4 pl-4 border-l border-gray-200">
+              <Phone className="h-4 w-4 text-blue-700" />
+              <span className="ml-2 text-sm text-gray-700">(720) 9-RENTRV</span>
+            </div>
           </div>
           
           <div className="hidden md:flex items-center space-x-8">
