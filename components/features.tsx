@@ -1,4 +1,4 @@
-import { Shield, Clock, MapPin, Phone, Wifi, Flame, Utensils } from 'lucide-react';
+import { Shield, Clock, MapPin, Phone, HelpCircle } from 'lucide-react';
 
 const features = [
   {
@@ -23,24 +23,22 @@ const features = [
   },
 ];
 
-const upgrades = [
+const faqs = [
   {
-    name: 'Wi-Fi Hotspot',
-    description: 'Stay connected on the road with our mobile hotspot. Perfect for remote work or checking emails while traveling.',
-    price: '$30',
-    icon: Wifi,
+    question: 'How much does it cost to rent an RV?',
+    answer: 'Our pricing is seasonal, similar to vacation rentals. You will see the base rate for the coach you selected on the booking page but once you add your trip dates you may see a different rate. Winter months are considered our off-season so you will find less expensive rates than you would in the summer or during holidays. We also offer discounts throughout the year.',
   },
   {
-    name: 'Camping Essentials Package',
-    description: 'Complete kit including kitchen utensils, pots, pans, camping chairs, tabletop grill, and family games.',
-    price: '$200',
-    icon: Utensils,
+    question: 'Do you have insurance coverage?',
+    answer: 'Yes, we have full insurance coverage and it is included in the price.',
   },
   {
-    name: 'Gas Fire Pit',
-    description: 'Enjoy a cozy campfire experience even during fire bans. Safe and approved for use at most campgrounds.',
-    price: '$100',
-    icon: Flame,
+    question: 'What is your cancellation policy?',
+    answer: 'We understand plans can change. Cancellations made 30 days or more before your trip start date are eligible for a full refund. Cancellations within 30 days may be subject to a cancellation fee. Please contact us for specific details about your reservation.',
+  },
+  {
+    question: 'What do I need to bring for my RV trip?',
+    answer: 'Our RVs come fully equipped with bedding, kitchen supplies, and basic camping gear. We provide a detailed checklist upon booking, but essentially you just need to bring your personal items, food, and a sense of adventure!',
   },
 ];
 
@@ -76,25 +74,24 @@ export function Features() {
       <div className="py-24 bg-gray-50 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl lg:text-center">
-            <h2 className="text-base font-semibold leading-7 text-blue-700">Optional Upgrades</h2>
+            <h2 className="text-base font-semibold leading-7 text-blue-700">FAQ</h2>
             <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              Enhance Your Adventure
+              Frequently Asked Questions
             </p>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              Add these convenient upgrades to make your RV experience even more comfortable and enjoyable.
+              Everything you need to know about renting an RV with us.
             </p>
           </div>
-          <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
-            <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
-              {upgrades.map((upgrade) => (
-                <div key={upgrade.name} className="flex flex-col">
-                  <dt className="flex items-center gap-x-3 text-base font-semibold leading-7 text-gray-900">
-                    <upgrade.icon className="h-5 w-5 flex-none text-blue-700" aria-hidden="true" />
-                    {upgrade.name}
+          <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24">
+            <dl className="space-y-8">
+              {faqs.map((faq, index) => (
+                <div key={index} className="border-b border-gray-200 pb-8 last:border-b-0">
+                  <dt className="flex items-start">
+                    <HelpCircle className="h-6 w-6 flex-none text-blue-700 mt-1" aria-hidden="true" />
+                    <span className="ml-3 text-lg font-semibold leading-7 text-gray-900">{faq.question}</span>
                   </dt>
-                  <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
-                    <p className="flex-auto">{upgrade.description}</p>
-                    <p className="mt-2 font-semibold text-blue-700">{upgrade.price}</p>
+                  <dd className="mt-4 ml-9">
+                    <p className="text-base leading-7 text-gray-600">{faq.answer}</p>
                   </dd>
                 </div>
               ))}
