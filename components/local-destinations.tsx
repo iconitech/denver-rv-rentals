@@ -21,7 +21,7 @@ const destinations = [
     name: "Great Sand Dunes",
     description: "Visit North America's tallest sand dunes set against mountain backdrops.",
     distance: "230 miles from Denver",
-    image: "/images/rv-rentals-denver-5.jpg"
+    image: "/images/rv-rentals-denver-5.webp"
   }
 ];
 
