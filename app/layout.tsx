@@ -8,14 +8,14 @@ import { Toaster } from '@/components/ui/toaster';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'RV Rentals in Denver by Florida Blue Sky Adventures',
-  description: 'Experience Colorado in comfort with affordable RV rentals. Explore the Rocky Mountains with our well-maintained fleet of RVs. Perfect for families and adventurers.',
-  keywords: 'RV rentals, Denver RV, Colorado RV rental, Rocky Mountains camping, family RV vacation, affordable RV rental Denver, Winnebago rental Denver',
+  title: 'RV Rentals Denver | Affordable Denver RV Rentals Near Airport',
+  description: 'Affordable RV rentals in Denver near DEN airport. Family-owned company offering motorhome & camper rentals in Denver. Explore Colorado with our well-maintained fleet of affordable RVs. Best rates guaranteed!',
+  keywords: 'rv rentals denver, denver rv rental, camper rentals denver, motorhome denver, rv denver airport, RV rental DIA, luxury RV rental Denver, family RV vacation Colorado',
   openGraph: {
-    title: 'RV Rentals in Denver by Florida Blue Sky Adventures',
-    description: 'Experience Colorado in comfort with affordable RV rentals. Explore the Rocky Mountains with our well-maintained fleet of RVs.',
+    title: 'RV Rentals Denver | Affordable Denver RV Rentals Near Airport',
+    description: 'Affordable RV rentals in Denver near DEN airport. Family-owned company offering motorhome & camper rentals in Denver. Explore Colorado with our well-maintained fleet.',
     url: 'https://www.rv-denver.com',
-    siteName: 'RV Rentals in Denver by Florida Blue Sky Adventures',
+    siteName: 'RV Rentals Denver by Florida Blue Sky Adventures',
     locale: 'en_US',
     type: 'website',
     images: [
@@ -23,18 +23,29 @@ export const metadata: Metadata = {
         url: '/images/rv-rentals-denver-1.webp',
         width: 1200,
         height: 630,
-        alt: 'Florida Blue Sky Adventures RV Rentals',
+        alt: 'Affordable RV Rentals in Denver, Colorado',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Florida Blue Sky Adventures - RV Rentals in Denver',
-    description: 'Experience Colorado in comfort with affordable RV rentals. Explore the Rocky Mountains with our fleet.',
+    title: 'RV Rentals Denver | Affordable Denver RV Rentals Near Airport',
+    description: 'Affordable RV rentals in Denver near DEN airport. Family-owned company offering motorhome & camper rentals. Best rates guaranteed!',
     images: ['/images/rv-rentals-denver-1.webp'],
   },
   alternates: {
     canonical: 'https://www.rv-denver.com',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
   },
   verification: {
     google: 'YOUR_GOOGLE_VERIFICATION_ID', // Add your Google Search Console verification ID
