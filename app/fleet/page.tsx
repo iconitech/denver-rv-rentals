@@ -1,3 +1,5 @@
+"use client";
+
 import { Metadata } from 'next'
 import { Navigation } from '@/components/navigation'
 import { Footer } from '@/components/footer'
@@ -6,7 +8,8 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Users, Ruler, Fuel } from 'lucide-react'
 
-export const metadata: Metadata = {
+// Note: metadata needs to be in a separate layout.tsx file for client components
+const metadata = {
   title: 'RV Fleet Denver | Luxury Motorhome Rentals Near DEN Airport',
   description: 'Explore our premium RV fleet in Denver. From spacious Winnebago Outlooks to luxurious motorhomes, find the perfect RV for your Colorado adventure. Located near DEN airport.',
 }
@@ -116,6 +119,66 @@ const fleetSchema = {
   }))
 }
 
+function RVCard({ rv }: { rv: typeof rvs[0] }) {
+  return (
+    <Card className="w-full overflow-hidden">
+      <div className="relative h-64 w-full">
+        <Image
+          src={rv.image}
+          alt={rv.name}
+          fill
+          className="object-cover"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+        />
+      </div>
+      
+      <CardContent className="p-6">
+        <h2 className="text-2xl font-bold text-gray-900 group-hover:text-gray-600">
+          {rv.name}
+        </h2>
+        <p className="mt-4 text-gray-600">
+          {rv.description}
+        </p>
+        
+        <div className="mt-6 flex items-center gap-x-6">
+          <div className="flex items-center gap-x-2">
+            <Users className="h-5 w-5 text-gray-400" />
+            <span className="text-sm">Sleeps {rv.specs.sleeps}</span>
+          </div>
+          <div className="flex items-center gap-x-2">
+            <Ruler className="h-5 w-5 text-gray-400" />
+            <span className="text-sm">{rv.specs.length}</span>
+          </div>
+          <div className="flex items-center gap-x-2">
+            <Fuel className="h-5 w-5 text-gray-400" />
+            <span className="text-sm">{rv.specs.fuel}</span>
+          </div>
+        </div>
+
+        <ul className="mt-6 space-y-2">
+          {rv.details.map((detail, index) => (
+            <li key={index} className="text-sm text-gray-600">
+              • {detail}
+            </li>
+          ))}
+        </ul>
+
+        <div className="mt-6 flex items-center justify-between">
+          <div className="text-2xl font-bold text-gray-900">
+            ${rv.price}<span className="text-sm text-gray-500">/night</span>
+          </div>
+          <Button
+            onClick={() => window.open('https://checkout.wheelbasepro.com/reserve?owner_id=176271', '_blank')}
+            className="bg-blue-700 hover:bg-blue-800"
+          >
+            Book Now
+          </Button>
+        </div>
+      </CardContent>
+    </Card>
+  );
+}
+
 export default function FleetPage() {
   return (
     <>
@@ -142,61 +205,7 @@ export default function FleetPage() {
             <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-12 lg:mx-0 lg:max-w-none lg:grid-cols-3">
               {rvs.map((rv) => (
                 <article key={rv.id} className="flex flex-col items-start">
-                  <Card className="w-full overflow-hidden">
-                    <div className="relative h-64 w-full">
-                      <Image
-                        src={rv.image}
-                        alt={rv.name}
-                        fill
-                        className="object-cover"
-                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                      />
-                    </div>
-                    
-                    <CardContent className="p-6">
-                      <h2 className="text-2xl font-bold text-gray-900 group-hover:text-gray-600">
-                        {rv.name}
-                      </h2>
-                      <p className="mt-4 text-gray-600">
-                        {rv.description}
-                      </p>
-                      
-                      <div className="mt-6 flex items-center gap-x-6">
-                        <div className="flex items-center gap-x-2">
-                          <Users className="h-5 w-5 text-gray-400" />
-                          <span className="text-sm">Sleeps {rv.specs.sleeps}</span>
-                        </div>
-                        <div className="flex items-center gap-x-2">
-                          <Ruler className="h-5 w-5 text-gray-400" />
-                          <span className="text-sm">{rv.specs.length}</span>
-                        </div>
-                        <div className="flex items-center gap-x-2">
-                          <Fuel className="h-5 w-5 text-gray-400" />
-                          <span className="text-sm">{rv.specs.fuel}</span>
-                        </div>
-                      </div>
-
-                      <ul className="mt-6 space-y-2">
-                        {rv.details.map((detail, index) => (
-                          <li key={index} className="text-sm text-gray-600">
-                            • {detail}
-                          </li>
-                        ))}
-                      </ul>
-
-                      <div className="mt-6 flex items-center justify-between">
-                        <div className="text-2xl font-bold text-gray-900">
-                          ${rv.price}<span className="text-sm text-gray-500">/night</span>
-                        </div>
-                        <Button
-                          onClick={() => window.open('https://checkout.wheelbasepro.com/reserve?owner_id=176271', '_blank')}
-                          className="bg-blue-700 hover:bg-blue-800"
-                        >
-                          Book Now
-                        </Button>
-                      </div>
-                    </CardContent>
-                  </Card>
+                  <RVCard rv={rv} />
                 </article>
               ))}
             </div>
