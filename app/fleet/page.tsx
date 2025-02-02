@@ -10,7 +10,7 @@ import { Users, Ruler, Fuel } from 'lucide-react'
 
 // Note: metadata needs to be in a separate layout.tsx file for client components
 const metadata = {
-  title: 'RV Fleet Denver | Luxury Motorhome Rentals Near DEN Airport',
+  title: 'RV Fleet Denver | Affordable Motorhome Rentals Near DEN Airport',
   description: 'Explore our premium RV fleet in Denver. From spacious Winnebago Outlooks to luxurious motorhomes, find the perfect RV for your Colorado adventure. Located near DEN airport.',
 }
 
