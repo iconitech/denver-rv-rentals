@@ -34,10 +34,10 @@ export function Navigation() {
           </div>
           
           <div className="hidden md:flex items-center space-x-8">
-            <Link href="#fleet" className="text-gray-700 hover:text-blue-700">Our Fleet</Link>
-            <Link href="#destinations" className="text-gray-700 hover:text-blue-700">Destinations</Link>
-            <Link href="#testimonials" className="text-gray-700 hover:text-blue-700">Reviews</Link>
-            <Link href="#contact" className="text-gray-700 hover:text-blue-700">Contact</Link>
+            <Link href="/#about" className="text-gray-700 hover:text-blue-700">About</Link>
+            <Link href="/#destinations" className="text-gray-700 hover:text-blue-700">Destinations</Link>
+            <Link href="/fleet" className="text-gray-700 hover:text-blue-700">Our Fleet</Link>
+            <Link href="/#contact" className="text-gray-700 hover:text-blue-700">Contact</Link>
             <Link href="https://checkout.wheelbasepro.com/reserve?owner_id=176271" target="_blank" rel="noopener noreferrer" className="bg-blue-700 hover:bg-blue-800 rounded-md py-2 px-4 text-white">Book Now</Link>
           </div>
 
@@ -52,10 +52,10 @@ export function Navigation() {
       {isOpen && (
         <div className="md:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white">
-            <Link href="#fleet" className="block px-3 py-2 text-gray-700 hover:text-blue-700">Our Fleet</Link>
-            <Link href="#destinations" className="block px-3 py-2 text-gray-700 hover:text-blue-700">Destinations</Link>
-            <Link href="#testimonials" className="block px-3 py-2 text-gray-700 hover:text-blue-700">Reviews</Link>
-            <Link href="#contact" className="block px-3 py-2 text-gray-700 hover:text-blue-700">Contact</Link>
+            <Link href="/#about" className="block px-3 py-2 text-gray-700 hover:text-blue-700">About</Link>
+            <Link href="/#destinations" className="block px-3 py-2 text-gray-700 hover:text-blue-700">Destinations</Link>
+            <Link href="/fleet" className="block px-3 py-2 text-gray-700 hover:text-blue-700">Our Fleet</Link>
+            <Link href="/#contact" className="block px-3 py-2 text-gray-700 hover:text-blue-700">Contact</Link>
             <Link href="https://checkout.wheelbasepro.com/reserve?owner_id=176271" target="_blank" rel="noopener noreferrer" className="w-full bg-blue-700 hover:bg-blue-800 mt-2 py-2 text-white">Book Now</Link>
           </div>
         </div>
