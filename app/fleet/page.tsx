@@ -189,31 +189,27 @@ export default function FleetPage() {
       
       <Navigation />
       
-      <main className="min-h-screen">
-        <div className="py-24 bg-white">
-          <div className="mx-auto max-w-7xl px-6 lg:px-8">
-            <div className="mx-auto max-w-2xl text-center">
-              <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
-                Denver RV Rental Fleet
-              </h1>
-              <p className="mt-6 text-lg leading-8 text-gray-600">
-                Discover our premium selection of well-maintained RVs, perfect for exploring Colorado's majestic landscapes. 
-                Located near Denver International Airport (DEN) for convenient pickup and drop-off.
-              </p>
-            </div>
+      <div className="py-24 bg-white">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="mx-auto max-w-2xl text-center">
+            <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
+              Denver RV Rental Fleet
+            </h1>
+            <p className="mt-6 text-lg leading-8 text-gray-600">
+              Discover our premium selection of well-maintained RVs, perfect for exploring Colorado's majestic landscapes. 
+              Located near Denver International Airport (DEN) for convenient pickup and drop-off.
+            </p>
+          </div>
 
-            <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-12 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-              {rvs.map((rv) => (
-                <article key={rv.id} className="flex flex-col items-start">
-                  <RVCard rv={rv} />
-                </article>
-              ))}
-            </div>
+          <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-12 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+            {rvs.map((rv) => (
+              <article key={rv.id} className="flex flex-col items-start">
+                <RVCard rv={rv} />
+              </article>
+            ))}
           </div>
         </div>
-      </main>
-
-      <Footer />
+      </div>
     </>
   )
 }
