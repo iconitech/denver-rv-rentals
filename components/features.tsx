@@ -60,18 +60,21 @@ function FAQItem({ question, answer }: { question: string; answer: string }) {
     <div className="border-b border-gray-200 last:border-b-0">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex w-full items-center justify-between py-4 text-left"
+        className="flex w-full items-center justify-between py-6 px-6 text-left hover:bg-gray-50"
       >
-        <span className="text-lg font-semibold text-gray-900">{question}</span>
+        <div className="flex items-center space-x-3">
+          <HelpCircle className="h-5 w-5 flex-shrink-0 text-blue-700" />
+          <span className="text-lg font-semibold text-gray-900">{question}</span>
+        </div>
         <ChevronDown
-          className={`h-5 w-5 text-gray-500 transition-transform ${
+          className={`h-5 w-5 text-gray-500 transition-transform duration-200 ${
             isOpen ? 'rotate-180' : ''
           }`}
         />
       </button>
       {isOpen && (
-        <div className="pb-4">
-          <p className="text-base text-gray-600">{answer}</p>
+        <div className="px-6 pb-6">
+          <p className="text-base text-gray-600 ml-8">{answer}</p>
         </div>
       )}
     </div>

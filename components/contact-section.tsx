@@ -4,6 +4,31 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import { useState, useEffect } from "react";
+
+function GoogleMap() {
+  const [mapLoaded, setMapLoaded] = useState(false);
+
+  useEffect(() => {
+    setMapLoaded(true);
+  }, []);
+
+  if (!mapLoaded) return null;
+
+  return (
+    <div className="mt-8 aspect-video w-full rounded-lg overflow-hidden shadow-lg">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3063.7105151219425!2d-104.7226040238259!3d39.83590767153897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876c670075980647%3A0xbe7dbc8616816f9a!2sRV%20Rental%20Denver!5e0!3m2!1sen!2sde!4v1738503253259!5m2!1sen!2sde"
+        width="100%"
+        height="100%"
+        style={{ border: 0 }}
+        allowFullScreen
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+      />
+    </div>
+  );
+}
 
 export function ContactSection() {
   return (
@@ -50,6 +75,8 @@ export function ContactSection() {
                 </div>
               </div>
             </div>
+
+            <GoogleMap />
           </div>
 
           <div className="bg-white rounded-lg shadow-sm p-8">
