@@ -11,7 +11,7 @@ import { Users, Ruler, Fuel } from 'lucide-react'
 // Note: metadata needs to be in a separate layout.tsx file for client components
 const metadata = {
   title: 'RV Fleet Denver | Affordable Motorhome Rentals Near DEN Airport',
-  description: 'Explore our premium RV fleet in Denver. From spacious Winnebago Outlooks to luxurious motorhomes, find the perfect RV for your Colorado adventure. Located near DEN airport.',
+  description: 'Explore our affordable RV fleet in Denver starting at $199/night. Find the perfect RV for your Colorado adventure. Located near DEN airport.',
 }
 
 // This data structure helps with SEO by providing structured data for each RV
@@ -196,7 +196,7 @@ export default function FleetPage() {
               Denver RV Rental Fleet
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              Discover our premium selection of well-maintained RVs, perfect for exploring Colorado's majestic landscapes. 
+              Discover our affordable selection of well-maintained RVs, perfect for exploring Colorado's majestic landscapes. 
               Located near Denver International Airport (DEN) for convenient pickup and drop-off.
             </p>
           </div>
