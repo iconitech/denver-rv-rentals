@@ -67,43 +67,51 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              '@context': 'https://schema.org',
-              '@type': 'RentalBusinessLocation',
-              name: 'RV Rentals in Denver by Florida Blue Sky Adventures',
-              description: 'Experience Colorado in comfort with affordable RV rentals. Explore the Rocky Mountains with our well-maintained fleet of RVs. Perfect for families and adventurers.',
-              url: 'https://www.rv-denver.com',
-              telephone: '(720) 9-RENTRV',
-              address: {
-                '@type': 'PostalAddress',
-                streetAddress: '8500 Peña Blvd',
-                addressLocality: 'Denver',
-                addressRegion: 'CO',
-                postalCode: '80249',
-                addressCountry: 'US',
-              },
-              geo: {
-                '@type': 'GeoCoordinates',
-                latitude: 39.8561, // Replace with actual coordinates
-                longitude: -104.6737, // Replace with actual coordinates
-              },
-              openingHoursSpecification: [
-                {
-                  '@type': 'OpeningHoursSpecification',
-                  dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
-                  opens: '08:00',
-                  closes: '20:00',
+            __html: JSON.stringify([
+              {
+                '@context': 'https://schema.org',
+                '@type': 'RentalBusinessLocation',
+                name: 'RV Rentals in Denver by Florida Blue Sky Adventures',
+                description: 'Experience Colorado in comfort with affordable RV rentals. Explore the Rocky Mountains with our well-maintained fleet of RVs. Perfect for families and adventurers.',
+                url: 'https://www.rv-denver.com',
+                telephone: '(720) 9-RENTRV',
+                address: {
+                  '@type': 'PostalAddress',
+                  streetAddress: '8500 Peña Blvd',
+                  addressLocality: 'Denver',
+                  addressRegion: 'CO',
+                  postalCode: '80249',
+                  addressCountry: 'US',
                 },
-                {
-                  '@type': 'OpeningHoursSpecification',
-                  dayOfWeek: 'Sunday',
-                  opens: '10:00',
-                  closes: '16:00',
+                geo: {
+                  '@type': 'GeoCoordinates',
+                  latitude: 39.8561, // Replace with actual coordinates
+                  longitude: -104.6737, // Replace with actual coordinates
                 },
-              ],
-              priceRange: '$$',
-              image: '/images/rv-rentals-denver-1.webp',
-            }),
+                openingHoursSpecification: [
+                  {
+                    '@type': 'OpeningHoursSpecification',
+                    dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+                    opens: '08:00',
+                    closes: '20:00',
+                  },
+                  {
+                    '@type': 'OpeningHoursSpecification',
+                    dayOfWeek: 'Sunday',
+                    opens: '10:00',
+                    closes: '16:00',
+                  },
+                ],
+                priceRange: '$$',
+                image: '/images/rv-rentals-denver-1.webp',
+              },
+              {
+                '@context': 'https://schema.org',
+                '@type': 'WebSite',
+                name: 'RV Rentals Denver by Florida Blue Sky Adventures',
+                url: 'https://www.rv-denver.com',
+              }
+            ]),
           }}
         />
       </head>
