@@ -93,6 +93,32 @@ const rvs = [
       fuelType: "Gas",
       vehicleInteriorType: "Sleeps 4"
     }
+  },
+  {
+    id: 4,
+    name: "2021 Thor Motor Coach Chateau 24F",
+    description: "Versatile RV, perfect for couples or families seeking adventure. Great for first-time RV renters and those wanting to explore Colorado's state parks.",
+    image: "/images/thor-motor-coach-24f.webp",
+    specs: {
+      sleeps: "4",
+      length: "25'",
+      fuel: "Gas",
+    },
+    price: "237",
+    details: [
+      "Efficient layout",
+      "Easy to maneuver",
+      "Full kitchen",
+      "Comfortable bed",
+      "Great fuel economy"
+    ],
+    schemaData: {
+      "@type": "Product",
+      model: "2021 Thor Motor Coach Chateau 24F",
+      vehicleConfiguration: "Class C RV",
+      fuelType: "Gas",
+      vehicleInteriorType: "Sleeps 4"
+    }
   }
 ]
 
