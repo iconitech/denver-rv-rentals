@@ -44,6 +44,19 @@ const rvs = [
       transmission: "Automatic"
     },
     price: "189"
+  },
+  {
+    id: 4,
+    name: "2021 Thor Motor Coach Chateau 24F",
+    description: "Modern and spacious RV with updated amenities.",
+    image: "/images/thor-motor-coach-24f.webp",
+    specs: {
+      sleeps: "4",
+      length: "25ft",
+      fuel: "Gas",
+      transmission: "Automatic"
+    },
+    price: "237"
   }
 ];
 

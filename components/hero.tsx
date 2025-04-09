@@ -19,8 +19,8 @@ export function Hero() {
               Experience Colorado in Comfort with Our Affordable RV Rentals
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-300">
-              Explore the Rocky Mountains in style with our premium RV rentals. 
-              Based in Denver, we offer premium vehicles and exceptional service as a family-owned business.
+              Explore the Rocky Mountains in style with our affordable RV rentals. 
+              Based in Denver, we offer a variety of vehicles and exceptional service as a family-owned business.
             </p>
             <div className="mt-10 flex items-center gap-x-6">
               <a href="#fleet">
