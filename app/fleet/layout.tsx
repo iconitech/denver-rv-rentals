@@ -2,11 +2,11 @@ import { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'RV Fleet Denver | Affordable Motorhome Rentals Near DEN Airport',
-  description: 'Explore our affordable RV fleet in Denver starting at $199/night. Find the perfect RV for your Colorado adventure. Located near DEN airport.',
+  description: 'Explore our affordable RV fleet in Denver starting at $189/night. Find the perfect RV for your Colorado adventure. Located near DEN airport.',
   metadataBase: new URL('https://rv-denver.com'),
   openGraph: {
     title: 'RV Fleet Denver | Affordable Motorhome Rentals Near DEN Airport',
-    description: 'Explore our affordable RV fleet in Denver starting at $199/night. Find the perfect RV for your Colorado adventure. Located near DEN airport.',
+    description: 'Explore our affordable RV fleet in Denver starting at $189/night. Find the perfect RV for your Colorado adventure. Located near DEN airport.',
     url: 'https://rv-denver.com/fleet',
     siteName: 'RV Rentals Denver',
     locale: 'en_US',

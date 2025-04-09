@@ -19,7 +19,7 @@ export function Hero() {
               Experience Colorado in Comfort with Our Affordable RV Rentals
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-300">
-              Explore the Rocky Mountains in style with our affordable RV rentals. 
+              Explore the Rocky Mountains in style with our affordable RV rentals starting at $189/day. 
               Based in Denver, we offer a variety of vehicles and exceptional service as a family-owned business.
             </p>
             <div className="mt-10 flex items-center gap-x-6">
