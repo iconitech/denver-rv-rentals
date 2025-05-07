@@ -5,11 +5,12 @@ export function Hero() {
   return (
     <div className="relative min-h-screen">
       <Image
-        src="/images/rv-rentals-denver-hero.webp"
+        src="/images/rv-rentals-denver-1.webp"
         alt="Luxury RV rental in Denver"
         fill
         priority
         className="object-cover"
+        sizes="100vw"
       />
       <div className="absolute inset-0 bg-gradient-to-r from-gray-900/90 to-gray-900/40" />
       <div className="relative pt-32 pb-16 sm:pb-24 lg:pb-32 min-h-screen flex items-center">
